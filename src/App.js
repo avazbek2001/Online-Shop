@@ -6,7 +6,6 @@ import Wishes from './router/wishes/Wishes';
 import Login from './router/login/Login';
 import Cart from './router/cart/Cart';
 import Notfound from './router/not-found/Notfound';
-import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -18,7 +17,6 @@ function App() {
         <Route path='/cart' element={<Cart />} />
         <Route path='*' element={<Notfound />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

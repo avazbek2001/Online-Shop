@@ -43,6 +43,8 @@ footer {
 .footer_end_left_info {
     display: flex;
     gap: 10px;
+    font-size: 13px;
+    font-weight: 550;
 }
 
 .footer__end span {
