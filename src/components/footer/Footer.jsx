@@ -14,14 +14,14 @@ function Footer() {
                     <p>Vakansiyalar</p>
                 </div>
                 <div className="footer__item">
-                    <p className='footer_title'>Biz haqimizda</p>
-                    <p>Topshirish punktlari</p>
-                    <p>Vakansiyalar</p>
+                    <p className='footer_title'>Foydalanuvchilarga</p>
+                    <p>Biz bilan bog'laning</p>
+                    <p>Savol javob</p>
                 </div>
                 <div className="footer__item">
-                    <p className='footer_title'>Biz haqimizda</p>
-                    <p>Topshirish punktlari</p>
-                    <p>Vakansiyalar</p>
+                    <p className='footer_title'>Tadbirkorlarga</p>
+                    <p>Uzumda Soting</p>
+                    <p>Sotuvchi kabinetiga kirish</p>
                 </div>
                 <div className="footer__item__end">
                     <p className='footer_title'>Ilovani yuklab olish</p>
