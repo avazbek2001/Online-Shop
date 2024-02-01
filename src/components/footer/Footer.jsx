@@ -4,6 +4,7 @@ import { IoLogoApple } from "react-icons/io";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaInstagram, FaTelegram, FaYoutube, FaFacebook } from "react-icons/fa";
 const currentYear = new Date().getFullYear();
+
 function Footer() {
     return (
         <div className="container">

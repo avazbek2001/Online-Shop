@@ -1,0 +1,80 @@
+form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__form__info {
+    width: 400px;
+    height: auto;
+    padding: 30px;
+    line-height: 30px;
+    background-color: var(--bg-sy);
+}
+
+.login__button {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--bg-py);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login__button:hover {
+    background-color: rgb(112, 0, 217);
+}
+
+.login__form__info label {
+    display: block;
+    margin-top: 10px;
+    color: rgb(72, 72, 72);
+    font-size: 16px;
+}
+
+.login__form__info .login__title {
+    text-align: center;
+    color: var(--bg-py);
+}
+
+.login__form__info .login__input {
+    width: 100%;
+    outline: none;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    background-color: rgb(222, 222, 222);
+    text-indent: 10px;
+}
+
+.login__form__info .login__input:focus {
+    border: 1px solid var(--bg-py);
+    background-color: rgb(211, 211, 211);
+}
+
+.checkbox__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.checkbox__info span {
+    font-size: 16px;
+    color: rgb(123, 123, 123);
+}
+
+.checkbox__info .checkbox {
+    width: 16px;
+}
+
+.login__form__info a {
+    color: dodgerblue;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}

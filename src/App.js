@@ -6,12 +6,14 @@ import Wishes from './router/wishes/Wishes';
 import Login from './router/login/Login';
 import Cart from './router/cart/Cart';
 import Notfound from './router/not-found/Notfound';
+import { PRODUCTS } from './static';
+
 function App() {
   return (
     <div className="App">
       <NavbarMain />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home data={PRODUCTS} />} />
         <Route path='/wishes' element={<Wishes />} />
         <Route path='/login' element={<Login />} />
         <Route path='/cart' element={<Cart />} />
