@@ -1,8 +1,8 @@
 export const PRODUCTS = [
     {
         _id: "pro-1",
-        title: "Leno",
-        price: 199_000,
+        title: "Chang Yutkich",
+        price: 990_000,
         category: "texnika",
         url: ["https://api.idea.uz/storage/products/August2020/1dhDwL8PeCXmUnOLyWSk.jpg"],
         desc: "Brend"
@@ -10,8 +10,8 @@ export const PRODUCTS = [
     },
     {
         _id: "pro-2",
-        title: "Geympad Sony DualSense simsiz, PlayStation 5 uchun",
-        price: 869_000,
+        title: "Kir yuvish mashinasi",
+        price: 4_869_000,
         category: "texnika",
         url: ["https://api.idea.uz/storage/products/December2021/pThb4rqQNdNZF1AyE9Fa.jpg"],
         desc: "Brend"
@@ -19,8 +19,8 @@ export const PRODUCTS = [
     },
     {
         _id: "pro-3",
-        title: "Kir yuvish kukuni Oila tanlovi, 3 kg, Ayoz tazeligi, Avtomat",
-        price: 42_000,
+        title: "New Phone Huawei",
+        price: 2_142_000,
         category: "hojalik-tovarlari",
         url: ["https://api.idea.uz/storage/products/June2023/ktaVdIKbaUXNWoIXnxDS.png"],
         desc: "Brend"
@@ -28,8 +28,8 @@ export const PRODUCTS = [
     },
     {
         _id: "pro-4",
-        title: "Ryukzak eko-charmdan, uniseks, universal",
-        price: 249_000,
+        title: "Gaz, Plitasi",
+        price: 3_249_000,
         category: "maktab",
         url: ["https://api.idea.uz/storage/products/December2023/GNjr4xQ0dQCqnxzbUU7s.png"],
         desc: "Brend"
@@ -37,8 +37,8 @@ export const PRODUCTS = [
     },
     {
         _id: "pro-5",
-        title: "MikserMikserMikserMikser Braun HM1070WH",
-        price: 798_000,
+        title: "Elektron Dazmol",
+        price: 1_198_000,
         category: "texnika",
         url: ["https://api.idea.uz/storage/products/December2023/GFr0xdtiwo1yxnj4pQ9v.png"],
         desc: "Brend"
@@ -46,8 +46,8 @@ export const PRODUCTS = [
     },
     {
         _id: "pro-6",
-        title: "Go'sht maydalagich  harbat / qora",
-        price: 699_000,
+        title: "Chang Yutkich from china",
+        price: 1_699_000,
         category: "oshxona",
         url: ["https://api.idea.uz/storage/products/December2023/FFKWd00UsNnzD6zjrOqk.png"],
         desc: "Brend"
@@ -55,8 +55,8 @@ export const PRODUCTS = [
     },
     {
         _id: "pro-7",
-        title: "Dazmol Haley HY-274",
-        price: 275_000,
+        title: "Television",
+        price: 3_275_000,
         category: "texnika",
         url: ["https://api.idea.uz/storage/products/April2023/tbN40NoiPnZyCuurDWfF.png"],
         desc: "Brend"
@@ -64,7 +64,7 @@ export const PRODUCTS = [
     },
     {
         _id: "pro-8",
-        title: "mol it qoy ot ",
+        title: "Wifi Router for home office ",
         price: 718_000,
         category: "texnika",
         url: ["https://api.idea.uz/storage/products/June2022/pYWyv7Lzzcpio2hCz9LP.jpg"],
@@ -73,8 +73,8 @@ export const PRODUCTS = [
     },
     {
         _id: "pro-9",
-        title: "karochi da",
-        price: 600_000,
+        title: "Watch Mechanick",
+        price: 1_900_000,
         category: "oshxona",
         url: ["https://api.idea.uz/storage/products/October2022/r901N7yU1hlI7Rks7biw.png"],
         desc: "Brend"
@@ -82,8 +82,8 @@ export const PRODUCTS = [
     },
     {
         _id: "pro-10",
-        title: "bilmadimda",
-        price: 123_000,
+        title: "Refrigerator",
+        price: 4_423_000,
         category: "texnika",
         url: ["https://api.idea.uz/storage/products/August2020/SqExXNoiGxsi4HhiuzcA.jpg  "],
         desc: "Brend"

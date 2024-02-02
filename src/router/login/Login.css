@@ -12,6 +12,7 @@ form {
     padding: 30px;
     line-height: 30px;
     background-color: var(--bg-sy);
+    border-radius: 8px;
 }
 
 .login__button {

@@ -1,7 +1,6 @@
 import React from 'react'
 import './Products.css'
 function Products({ data }) {
-    console.log(data);
     return (
         <div className='container'>
             <h2 className='product__heading'>Arzon Narxlar <span>&#10095;</span></h2>
