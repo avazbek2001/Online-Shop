@@ -60,12 +60,14 @@ form {
 .checkbox__info {
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px;
+    padding: 10px 0;
+    display: flex;
 }
 
 .checkbox__info span {
     font-size: 16px;
     color: rgb(123, 123, 123);
+    cursor: pointer;
 }
 
 .checkbox__info .checkbox {

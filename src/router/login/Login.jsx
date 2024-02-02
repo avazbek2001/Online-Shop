@@ -13,8 +13,11 @@ function Login() {
                     <label htmlFor="">Password</label>
                     <input className='login__input' type="text" placeholder='Enter password' name="" id="" />
                     <div className="checkbox__info">
-                        <input className='checkbox' type="checkbox" />
-                        <span>Remember me</span>
+
+                        <span><input className='checkbox' type="checkbox" /> Remember me</span>
+                        <div>
+                            <span>Forgot Password</span>
+                        </div>
                     </div>
                     <button className='login__button'> Kirish</button>
                     <NavLink to={'/'}>Bosh sahifaga qaytish</NavLink>
