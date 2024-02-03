@@ -1,9 +1,10 @@
 import React from 'react'
 import './Navbar.css'
 import { IoMenu, IoSearch } from "react-icons/io5"
-import { FaRegUser, FaRegHeart, FaCartArrowDown, } from "react-icons/fa";
+import { FaRegUser, FaRegHeart } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
+import { FiShoppingCart } from "react-icons/fi";
 
 function Navbar() {
     return (
@@ -34,7 +35,7 @@ function Navbar() {
                         <span>Sevimlilar</span>
                     </NavLink>
                     <NavLink to={'/cart'} className="navbar__item">
-                        <FaCartArrowDown />
+                        <FiShoppingCart />
                         <span>Savat</span>
                     </NavLink>
                 </div>
