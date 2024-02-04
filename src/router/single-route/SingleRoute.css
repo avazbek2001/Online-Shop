@@ -1,0 +1,175 @@
+.single-route {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.single-route-left {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+}
+
+.single-route-left .main_image {
+    display: flex;
+}
+
+.single-route-left .main_image img {
+    width: 100%;
+    padding: 5%;
+}
+
+.single-route-left .column_images {
+    width: 35%;
+    overflow-y: auto;
+}
+
+.single-route-left .column_images img {
+    width: 100%;
+    padding: 5%;
+}
+
+.single-route-right {
+    width: 55%;
+    padding: 20px;
+}
+
+/* Single Page right site */
+.single-route-right {
+    height: auto;
+}
+
+.single-route-title {
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.single-route-right .sell,
+.single-route-right .delivery {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.single-route-hr {
+    margin: 10px 0;
+}
+
+.single-route-right .color {
+    margin: 10px 0 20px;
+}
+
+.single-route-right .storage .storage_item,
+.single-route-right .color .color_item {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.storage_item img,
+.color_item img {
+    width: 100px;
+    height: 100px;
+}
+
+.single_amount {
+    margin: 20px 0;
+}
+
+.single_amount .single_amount_item {
+    display: flex;
+    gap: 20px;
+}
+
+
+.cost .cost_item {
+    display: flex;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.single_cost .single_cost_item {
+    display: flex;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.single_discount {
+    background-color: var(--bg-py);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.credit_cost {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #F2F4F7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.credit_cost mark {
+    padding: 5px;
+}
+
+.credit_cost:hover {
+    background-color: #d4d4d4;
+}
+
+@media screen and (max-width:800px) {
+    .single-route {
+        display: block;
+    }
+
+    .single-route-left .main_image {
+        width: 80%;
+    }
+
+    .single-route-left .column_images {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-route-left .column_images img {
+        padding: 5%;
+    }
+
+
+    .single-route-left img {
+        object-fit: contain;
+    }
+
+    .single-route-left {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .single-route-right {
+        width: 100%;
+        padding-bottom: 70px;
+    }
+
+    .credit_cost span {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .single-route-left {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .single_cost_item {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}

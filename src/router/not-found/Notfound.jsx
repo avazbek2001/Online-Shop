@@ -1,9 +1,16 @@
 import React from 'react'
-
+import Empty from '../../components/empty/Empty'
+import img from '../../assets/penguin.a739ac8.png'
 function Notfound() {
     return (
         <div>
-            <h1>No info found</h1>
+            <Empty
+                img={img}
+                title="Bu mahsulot qolmadi"
+                info="Lekin boshqa koʻplab mahsulotlar ham bor. Ularni bosh sahifada koʻring"
+                btn_word="Bosh Sahifda"
+                link="/"
+            />
         </div>
     )
 }

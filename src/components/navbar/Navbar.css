@@ -88,6 +88,13 @@
     gap: 6px;
 }
 
+.navbar__item sup {
+    padding: 2px;
+    border-radius: 50%;
+    background-color: var(--bg-py);
+    color: white;
+}
+
 .navbar__item svg {
     font-size: 20px;
 }

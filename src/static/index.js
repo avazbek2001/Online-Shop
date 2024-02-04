@@ -55,6 +55,32 @@ export const PRODUCTS = [
         url: ["https://images.uzum.uz/cjnddisvutv1g2rj4mvg/original.jpg"],
         desc: "lorem ipsum dolor"
     },
+    {
+        _id: "pro-8",
+        title: "Aqlli televizor TCL 43 P635 4K Led HDR 10+ Google TV",
+        price: 3_669_000,
+        category: "texnika",
+        url: ["https://images.uzum.uz/cgk51tj57mg9720de93g/original.jpg"],
+        desc: "Interfeys uslubi - Google TV UI + TCL TV UI. LED UHD Google TV. Android R."
+    },
+    {
+        _id: "pro-9",
+        title: "Noutbuk uchun universal sumkalar to'plami + elkama-sumka, qalam qutisi (kosmetik sumka)",
+        price: 129_000,
+        category: "texnika",
+        url: ["https://images.uzum.uz/cmsl883ifoubkc6q1mv0/original.jpg"],
+        desc: "Interfeys uslubi - Google TV UI + TCL TV UI. LED UHD Google TV. Android R."
+    },
+    {
+        _id: "pro-10",
+        title: "Videoregistrator Lenovo Plus Full HD",
+        price: 609_000,
+        category: "texnika",
+        url: ["https://images.uzum.uz/cggio2vhj8j9g69b3dgg/original.jpg"],
+        desc: "Interfeys uslubi - Google TV UI + TCL TV UI. LED UHD Google TV. Android R."
+    },
+ 
+
 ]
 
 export default PRODUCTS

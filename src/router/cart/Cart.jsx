@@ -3,7 +3,7 @@ import Empty from '../../components/empty/Empty'
 import img from '../../assets/shopocat.490a4a1.png'
 function Cart() {
     return (
-        <div className='container'>
+        <div>
             <Empty
                 img={img}
                 title="Savatda hozircha mahsulot yoʻq"

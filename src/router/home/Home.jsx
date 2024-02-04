@@ -7,7 +7,7 @@ function Home({ data }) {
     return (
         <div className='home container'>
             <Banner />
-            <Products data={data} />
+            <Products title="Arzon Narxlar" data={data} />
             <Footer />
         </div>
     )

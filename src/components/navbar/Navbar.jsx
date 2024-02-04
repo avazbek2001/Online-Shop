@@ -5,8 +5,10 @@ import { FaRegUser, FaRegHeart } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
 import { FiShoppingCart } from "react-icons/fi";
+import { useSelector } from 'react-redux';
 
 function Navbar() {
+    const wishes = useSelector(state => state.wishes.value)
     return (
         <div className='container'>
             <div className="navbar">
@@ -32,7 +34,7 @@ function Navbar() {
                     </NavLink>
                     <NavLink to={'/wishes'} className="navbar__item">
                         <FaRegHeart />
-                        <span>Sevimlilar</span>
+                        <span>Sevimlilar<sup>{wishes.length}</sup></span>
                     </NavLink>
                     <NavLink to={'/cart'} className="navbar__item">
                         <FiShoppingCart />

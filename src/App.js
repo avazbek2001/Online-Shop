@@ -7,6 +7,7 @@ import Login from './router/login/Login';
 import Cart from './router/cart/Cart';
 import Notfound from './router/not-found/Notfound';
 import { PRODUCTS } from './static';
+import SingleRoute from './router/single-route/SingleRoute';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/wishes' element={<Wishes />} />
         <Route path='/login' element={<Login />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/products/:id' element={<SingleRoute />} />
         <Route path='*' element={<Notfound />} />
       </Routes>
     </div>
