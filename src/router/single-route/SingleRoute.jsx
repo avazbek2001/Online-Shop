@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './SingleRoute.css'
 import { PRODUCTS } from '../../static/index'
 import { useParams } from 'react-router-dom'

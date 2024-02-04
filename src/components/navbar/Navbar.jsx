@@ -34,7 +34,8 @@ function Navbar() {
                     </NavLink>
                     <NavLink to={'/wishes'} className="navbar__item">
                         <FaRegHeart />
-                        <span>Sevimlilar<sup>{wishes.length}</sup></span>
+                        {wishes.length > 0 && <sup>{wishes.length}</sup>}
+                        <span>Sevimlilar</span>
                     </NavLink>
                     <NavLink to={'/cart'} className="navbar__item">
                         <FiShoppingCart />
