@@ -17,11 +17,11 @@ function SingleRoute() {
             <div className='single-route'>
                 <div className="single-route-left">
                     <div className="column_images">
-                        <img src={item.url} alt="" />
-                        <img src={item.url} alt="" />
-                        <img src={item.url} alt="" />
-                        <img src={item.url} alt="" />
-                        <img src={item.url} alt="" />
+                        <img src={item.url} alt="related_images" />
+                        <img src={item.url} alt="related_images" />
+                        <img src={item.url} alt="related_images" />
+                        <img src={item.url} alt="related_images" />
+                        <img src={item.url} alt="related_images" />
                     </div>
                     <div className="main_image">
                         <img src={item.url} alt="" />
@@ -47,22 +47,13 @@ function SingleRoute() {
                             <img src={item.url} alt="" />
                         </div>
                     </div>
-                    <div className="storage">
-                        <span>Xotira</span>
-                        <div className="storage_item">
-                            <img src={item.url} alt="" />
-                            <img src={item.url} alt="" />
-                        </div>
-                    </div>
                     <div className="single_amount">
                         <span>Miqdor</span>
                         <div className="single_amount_item">
-                            <div lassName="single_increament_amount">
-                                <button>-</button>
-                                <button>1</button>
-                                <button>+</button>
-                            </div>
-                            <span>Sotuvda 450 dona bor</span>
+                            <button>-</button>
+                            <button>1</button>
+                            <button>+</button>
+                            <p>Sotuvda 450 dona bor</p>
                         </div>
                     </div>
                     <div className="single_cost">
@@ -76,6 +67,10 @@ function SingleRoute() {
                     <div className="credit_cost">
                         <mark>oyiga {(item.price * 1.5 / 12)?.brm()} so'mdan</mark>
                         <span>Muddatli to'lov</span>
+                    </div>
+                    <div className="single-page_buttons">
+                        <button>Savatga qo'shish</button>
+                        <button>Tugmani bir bosishda xarid qilish</button>
                     </div>
                 </div>
             </div>
