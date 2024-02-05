@@ -123,6 +123,7 @@
 
 .credit_cost mark {
     padding: 5px;
+    border-radius: 5px;
 }
 
 .credit_cost:hover {
@@ -225,5 +226,6 @@
     .single-page_buttons {
         display: flex;
         flex-wrap: wrap;
+        gap: 5px;
     }
 }
