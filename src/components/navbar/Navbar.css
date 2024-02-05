@@ -121,8 +121,27 @@
 }
 
 .navbar__bottom p {
+    cursor: pointer;
     white-space: nowrap;
+    position: relative;
 }
+
+.navbar__bottom>p::before {
+    content: "";
+    transition: .9s;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    background-color: rgb(34, 34, 34);
+}
+
+.navbar__bottom>p:hover::before,
+.navbar__bottom>p:hover {
+    color: rgb(34, 34, 34);
+    width: 100%;
+}
+
 
 /* Navbar bottom end */
 

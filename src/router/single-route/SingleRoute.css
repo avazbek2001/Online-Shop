@@ -89,6 +89,11 @@
 
 .single_amount .single_amount_item button {
     width: 50px;
+    font-size: 18px;
+    background-color: lightgray;
+    border: 1px solid var(--bg-py);
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .cost .cost_item {
