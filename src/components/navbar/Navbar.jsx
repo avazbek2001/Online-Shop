@@ -9,6 +9,9 @@ import { useSelector } from 'react-redux';
 
 function Navbar() {
     const wishes = useSelector(state => state.wishes.value)
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const username = users.length > 0 ? users[0].username : null;
     return (
         <div className='container'>
             <div className="navbar">
@@ -30,7 +33,7 @@ function Navbar() {
                     </NavLink>
                     <NavLink to={'/login'} className="navbar__item">
                         <FaRegUser />
-                        <span>Kirish</span>
+                        <span> {username ? username : "Kirish"}</span>
                     </NavLink>
                     <NavLink to={'/wishes'} className="navbar__item">
                         <FaRegHeart />
