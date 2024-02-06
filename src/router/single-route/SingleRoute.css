@@ -16,7 +16,7 @@
 
 .single-route-left .main_image img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .single-route-left .column_images {

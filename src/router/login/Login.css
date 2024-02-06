@@ -45,16 +45,16 @@ form {
 .login__form__info .login__input {
     width: 100%;
     outline: none;
-    height: 30px;
+    height: 39px;
     border-radius: 6px;
     border: 1px solid gray;
-    background-color: rgb(222, 222, 222);
+    background-color: rgb(236, 236, 236);
     text-indent: 10px;
 }
 
 .login__form__info .login__input:focus {
     border: 1px solid var(--bg-py);
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(225, 225, 225);
 }
 
 .checkbox__info {

@@ -8,6 +8,7 @@ import Cart from './router/cart/Cart';
 import Notfound from './router/not-found/Notfound';
 import { PRODUCTS } from './static';
 import SingleRoute from './router/single-route/SingleRoute';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/products/:id' element={<SingleRoute />} />
         <Route path='*' element={<Notfound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
