@@ -89,9 +89,9 @@
 
 .single_amount .single_amount_item button {
     width: 50px;
-    font-size: 18px;
+    font-size: 17px;
     background-color: lightgray;
-    border: 1px solid var(--bg-py);
+    border: none;
     border-radius: 3px;
     cursor: pointer;
 }

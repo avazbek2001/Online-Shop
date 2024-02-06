@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './SingleRoute.css'
 import { PRODUCTS } from '../../static/index'
 import { useParams } from 'react-router-dom'
@@ -8,6 +8,9 @@ function SingleRoute() {
     const params = useParams()
     const data = PRODUCTS
     const item = data.find(item => `${item._id}` === params.id)
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [params])
     if (!item) {
         return <Notfound />
     }
