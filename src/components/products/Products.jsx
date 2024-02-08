@@ -33,7 +33,7 @@ function Products({ data, title }) {
                                     </div>
                             }
                             <div className="card__body">
-                                <h3 className='card__title'>{item.title}</h3>
+                                <h3 title={item.title} className='card__title'>{item.title}</h3>
                                 <mark>{(item.price * 1.5 / 12)?.brm()}</mark>
                                 <div className="card__prices">
                                     <div className='card__price-item'>

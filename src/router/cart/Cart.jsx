@@ -3,34 +3,22 @@ import Empty from '../../components/empty/Empty'
 import img from '../../assets/shopocat.490a4a1.png'
 import { useSelector, useDispatch } from 'react-redux'
 import { incCart, decCart, removeAllCart, removeCart } from '../../context/cartSlice'
+import CartProduct from '../../components/cart-product/CartProduct'
 
 
 function Cart() {
     const dispatch = useDispatch()
     const carts = useSelector(state => state.carts.value)
-    console.log(carts);
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
     return (
-
-        <div>
+        <div className='h-70'>
             {
                 carts.length ? <div className='container'>
 
                     {
-                        carts?.map(el => {
-                            return <div key={el._id}>
-                                <img src={el.url} width={150} alt="" />
-                                <h4>{el.title}</h4>
-                                <button onClick={() => dispatch(decCart(el))}>-</button>
-                                <button>{el.quantity}</button>
-                                <button onClick={() => dispatch(incCart(el))}>+</button>
-                                <button onClick={() => dispatch(removeCart(el))}>Remove Cart</button>
-                                <button onClick={() => dispatch(removeAllCart(el))}>Remove All Carts</button>
-                            </div>
-
-                        })
+                        <CartProduct data={carts} />
                     }
                 </div> :
                     <Empty

@@ -3,8 +3,12 @@ import './SingleRoute.css'
 import { PRODUCTS } from '../../static/index'
 import { useParams } from 'react-router-dom'
 import Notfound from '../not-found/Notfound'
+import { incCart, decCart } from '../../context/cartSlice'
+import { useDispatch } from 'react-redux'
 
 function SingleRoute() {
+    const dispatch = useDispatch()
+
     const params = useParams()
     const data = PRODUCTS
     const item = data.find(item => `${item._id}` === params.id)

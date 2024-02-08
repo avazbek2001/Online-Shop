@@ -11,7 +11,7 @@ function Wishes() {
         window.scrollTo(0, 0)
     }, [])
     return (
-        <div>
+        <div className='h-70'>
             {
                 wishes.length ? <Products title="Sevimlilar" data={wishes} /> :
                     <Empty

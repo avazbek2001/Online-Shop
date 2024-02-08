@@ -24,7 +24,7 @@ function Login() {
 
     return (
         <div className='container'>
-            <form onSubmit={BtnClick}>
+            <form className='login__form' onSubmit={BtnClick}>
                 <div className="login__form__info">
                     <h3 className='login__title'>Tizimga Kirish</h3>
                     <label htmlFor="username">Username</label>
