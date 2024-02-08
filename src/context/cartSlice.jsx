@@ -32,6 +32,8 @@ const { actions, reducer } = createSlice({
         },
         removeAllCart(state, { payload }) {
             state.value = []
+            localStorage.setItem("carts", JSON.stringify(state.value))
+
         }
     }
 })

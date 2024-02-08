@@ -18,7 +18,7 @@ function Login() {
 
     const showAlert = () => {
         let users = JSON.parse(localStorage.getItem("users")) || [];
-        const usernames = users.map(user => user.username).join('');
+        users.map(user => user.username).join('');
         alert(`Your username is: ${username}`);
     };
 

@@ -21,6 +21,18 @@
 
 
 /* Navbar - start */
+
+
+.navbar__wrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: white;
+    box-shadow: 0 5px 5px #7771;
+
+}
+
 .navbar {
     display: flex;
     height: 70px;

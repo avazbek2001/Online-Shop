@@ -24,48 +24,50 @@ function Navbar() {
     let users = JSON.parse(localStorage.getItem("users")) || [];
     const username = users.length > 0 ? users[0].username : null;
     return (
-        <div className='container'>
-            <div className="navbar">
-                <NavLink to={'/'} className="navbar__logo">
-                    <h2>uzum market</h2>
-                </NavLink>
-                <button className="navbar__category-btn">
-                    <IoMenu />
-                    <span>Katalog</span>
-                </button>
-                <div className="navbar__search">
-                    <input type="text" placeholder={typeEffect} />
-                    <button><IoSearch /></button>
-                </div>
-                <div className="navbar__collection">
-                    <NavLink to={'/'} className="navbar__item">
-                        <IoHome />
-                        <span>Bosh Sahifa</span>
+        <div className="navbar__wrapper">
+            <div className='container'>
+                <div className="navbar">
+                    <NavLink to={'/'} className="navbar__logo">
+                        <h2>uzum market</h2>
                     </NavLink>
-                    <NavLink to={'/login'} className="navbar__item">
-                        <FaRegUser />
-                        <span> {username ? username : "Kirish"}</span>
-                    </NavLink>
-                    <NavLink to={'/wishes'} className="navbar__item">
-                        <FaRegHeart />
-                        {wishes.length > 0 ? (
-                            <>
-                                <b className='navbar-item-wishes'>{wishes.length}</b>
-                            </>
-                        ) : (
-                            <span>Sevimlilar</span>
-                        )}
-                    </NavLink>
-                    <NavLink to={'/cart'} className="navbar__item">
-                        <FiShoppingCart />
-                        {cart.length > 0 ? (
-                            <>
-                                <b className='navbar-item-cart'>{cart.length}</b>
-                            </>
-                        ) : (
-                            <span>Savatcha</span>
-                        )}
-                    </NavLink>
+                    <button className="navbar__category-btn">
+                        <IoMenu />
+                        <span>Katalog</span>
+                    </button>
+                    <div className="navbar__search">
+                        <input type="text" placeholder={typeEffect} />
+                        <button><IoSearch /></button>
+                    </div>
+                    <div className="navbar__collection">
+                        <NavLink to={'/'} className="navbar__item">
+                            <IoHome />
+                            <span>Bosh Sahifa</span>
+                        </NavLink>
+                        <NavLink to={'/login'} className="navbar__item">
+                            <FaRegUser />
+                            <span> {username ? username : "Kirish"}</span>
+                        </NavLink>
+                        <NavLink to={'/wishes'} className="navbar__item">
+                            <FaRegHeart />
+                            {wishes.length > 0 ? (
+                                <>
+                                    <b className='navbar-item-wishes'>{wishes.length}</b>
+                                </>
+                            ) : (
+                                <span>Sevimlilar</span>
+                            )}
+                        </NavLink>
+                        <NavLink to={'/cart'} className="navbar__item">
+                            <FiShoppingCart />
+                            {cart.length > 0 ? (
+                                <>
+                                    <b className='navbar-item-cart'>{cart.length}</b>
+                                </>
+                            ) : (
+                                <span>Savatcha</span>
+                            )}
+                        </NavLink>
+                    </div>
                 </div>
             </div>
         </div>
