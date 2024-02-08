@@ -92,13 +92,29 @@
     position: relative;
 }
 
-.navbar__item sup {
-    position: absolute;
-    top: -10px;
-    right: 70px;
-    color: var(--bg-py);
-    border-radius: 10px;
-    padding: 1px;
+.navbar__collection .navbar__item:nth-child(4) {
+    position: relative;
+}
+
+
+.navbar-item-wishes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+}
+
+.navbar-item-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    border-radius: 3px;
+    background-color: var(--bg-py);
+    color: white;
 }
 
 .navbar__item svg {
@@ -171,13 +187,20 @@
         display: flex;
     }
 
-    .navbar__collection .navbar__item:nth-child(3) {
-        position: relative;
+    .navbar-item-wishes {
+        font-size: 12px;
+        width: 15px;
+        position: absolute;
+        top: 0;
+        right: -18px;
     }
 
-    .navbar__item sup {
-        top: -2px;
-        right: 10px;
+    .navbar-item-cart {
+        font-size: 12px;
+        width: 15px;
+        position: absolute;
+        top: 0;
+        right: -18px;
     }
 
     .subheader {

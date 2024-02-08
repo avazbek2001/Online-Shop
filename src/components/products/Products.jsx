@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToWishes, removeFromWishes } from "../../context/wishesSlice"
 import { TiHeartFullOutline } from "react-icons/ti";
 import { Link } from 'react-router-dom';
+import { incCart } from '../../context/cartSlice';
 
 function Products({ data, title }) {
     const dispatch = useDispatch()
@@ -39,7 +40,7 @@ function Products({ data, title }) {
                                         <del>{(item.price * 1.2)?.brm()}</del>
                                         <p>{item.price?.brm()} so'm    </p>
                                     </div>
-                                    <div className='card__cart'>
+                                    <div onClick={() => dispatch(incCart(item))} className='card__cart'>
                                         <FiShoppingCart />
                                     </div>
                                 </div>

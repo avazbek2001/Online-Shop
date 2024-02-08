@@ -1,12 +1,14 @@
 import React from 'react'
 import './Footer.css'
 import { IoLogoApple } from "react-icons/io";
+import { useLocation } from 'react-router-dom';
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaInstagram, FaTelegram, FaYoutube, FaFacebook } from "react-icons/fa";
 const currentYear = new Date().getFullYear();
 
 function Footer() {
-    return (
+    const { pathname } = useLocation()
+    return pathname.includes("login") ? <></> : (
         <div className="container">
             <footer>
                 <div className="footer__item">
