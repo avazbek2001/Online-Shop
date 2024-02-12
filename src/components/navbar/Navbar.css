@@ -22,7 +22,6 @@
 
 /* Navbar - start */
 
-
 .navbar__wrapper {
     position: sticky;
     top: 0;
@@ -67,6 +66,7 @@
     height: 40px;
     flex: 1;
     display: flex;
+    position: relative;
 }
 
 .navbar__search input {
@@ -82,6 +82,46 @@
     background: var(--bg-sy);
     border: none;
     border-radius: 0 4px 4px 0;
+}
+
+.nav__search_drop {
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 5px);
+    max-height: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #0002;
+    border-radius: 0 0 10px 10px;
+    padding: 10px 20px 0;
+    overflow: auto;
+}
+
+.nav__search_notfound {
+    text-align: center;
+}
+
+.nav__search_item {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav__search_item p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.nav__search_item img {
+    width: 40px;
+    height: 50px;
+    object-fit: cover`;
+}
+
+.nav__search_item:last-child {
+    border-bottom: none;
 }
 
 .navbar__collection {

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { FaRegTrashAlt } from 'react-icons/fa'
 import "number-brm"
+import CartForm from './CartForm'
 
 
 function CartProduct({ data }) {
@@ -40,20 +41,7 @@ function CartProduct({ data }) {
                     ))}
                 </div>
                 <div className="cart__register">
-                    <div className="input__reg">
-                        <h3>Ma'lumotlarni to'ldiring:</h3>
-                        <form action="">
-                            <input type="text" placeholder="To'liq ismingiz" />
-                            <input type="text" placeholder="+998 00-000-00-00" />
-                            <input type="text" placeholder="Manzilingiz" />
-                            <input required type="text" placeholder="Habar yo'llash" />
-                            <div className="total">
-                                <p>Umumiy narx:</p>
-                                <b> {data?.reduce((a, b) => a + b.price * b.quantity, 0)?.brm()} so'm</b>
-                            </div>
-                            <button className="btn-reg"> Rasmiylashtirishga o'tish</button>
-                        </form>
-                    </div>
+                    <CartForm data={data} />
                 </div>
             </div>
         </div >

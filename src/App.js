@@ -13,7 +13,7 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
-      <NavbarMain />
+      <NavbarMain   />
       <Routes>
         <Route path='/' element={<Home data={PRODUCTS} />} />
         <Route path='/wishes' element={<Wishes />} />
