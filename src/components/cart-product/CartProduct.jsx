@@ -9,6 +9,8 @@ import CartForm from './CartForm'
 
 
 function CartProduct({ data }) {
+
+
     const dispatch = useDispatch()
     return (
         <div className="container">

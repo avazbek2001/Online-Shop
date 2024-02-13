@@ -99,6 +99,15 @@
     display: grid;
     place-items: center;
     font-size: 18px;
+    transition: .9s;
+}
+
+.card__cart:hover {
+    transform: scale(1.1);
+}
+
+.card__cart svg {
+    cursor: pointer;
 }
 
 @media screen and (max-width:600px) {

@@ -7,8 +7,19 @@ import { addToWishes, removeFromWishes } from "../../context/wishesSlice"
 import { TiHeartFullOutline } from "react-icons/ti";
 import { Link } from 'react-router-dom';
 import { incCart } from '../../context/cartSlice';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function Products({ data, title }) {
+    const success = () => {
+
+        toast.success("Savatga qo'shildi! ", {
+            position: "bottom-right"
+        });
+
+    }
+
     const dispatch = useDispatch()
     let wishes = useSelector(state => state.wishes.value)
     return (
@@ -41,7 +52,9 @@ function Products({ data, title }) {
                                         <p>{item.price?.brm()} so'm    </p>
                                     </div>
                                     <div onClick={() => dispatch(incCart(item))} className='card__cart'>
-                                        <FiShoppingCart />
+                                        <FiShoppingCart onClick={success} />
+                                        <ToastContainer
+                                        />
                                     </div>
                                 </div>
                             </div>
