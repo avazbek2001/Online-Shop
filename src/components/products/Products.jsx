@@ -13,9 +13,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Products({ data, title }) {
     const success = () => {
-
         toast.success("Savatga qo'shildi! ", {
-            position: "bottom-right"
+            position: "bottom-right",
         });
 
     }
