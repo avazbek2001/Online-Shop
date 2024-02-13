@@ -1,0 +1,36 @@
+.admin {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.admin__sidebar {
+    background-color: var(--bg-py);
+    height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+.admin__content {
+    padding: 20px;
+}
+
+.go_home_btn {
+    border: none;
+    padding: 10px;
+    color: #fff5;
+    color: black;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.admin__link {
+    border-radius: 20px;
+    background-color: #fff5;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.admin__link.active {
+    background-color: #fff9;
+}

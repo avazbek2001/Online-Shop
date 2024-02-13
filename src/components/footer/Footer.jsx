@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 
 function Footer() {
     const { pathname } = useLocation()
-    return pathname.includes("login") ? <></> : (
+    return pathname.includes("login") || pathname.includes("admin") ? <></> : (
         <div className="container">
             <footer>
                 <div className="footer__item">

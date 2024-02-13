@@ -3,21 +3,45 @@ import React, { useState, useRef } from 'react'
 // controlled form equal usestate
 // uncontrolled form equal useref
 
+const BOT_TOKEN = '6909865165:AAFz3-4bVbj5-Q0yoNhr1Rsga6q0si0dPxg'
+const CHAT_ID = -4141809637
+const USER_ID = 5819078851
+// https://api.telegram.org/bot6909865165:AAFz3-4bVbj5-Q0yoNhr1Rsga6q0si0dPxg/getUpdates
+// https://api.telegram.org/bot[your_token]/sendMessage?chat_id=[your chat_id]&parse_mode=html
+
 function CartForm({ data }) {
     const [fullName, setFullName] = useState("")
     const tel = useRef()
     const message = useRef()
     const address = useRef()
 
+
+
     const HandleSubmit = (e) => {
         e.preventDefault()
-        let user = {
-            fullName: fullName,
-            tel: tel.current.value,
-            address: address.current.value,
-            message: message.current.value,
-        }
-        console.log(user);
+        let text = "Delivery %0A%0A"
+        text += `Name: ${fullName}%0A`
+        text += `Phone: ${tel.current.value}%0A`
+        text += `Address: ${address.current.value}%0A`
+        text += `Message: ${message.current.value}%0A%0A`
+
+        data.forEach((item) => {
+            text += `Product Name: ${item.title}%0A`
+            text += `Quantity: ${item.quantity}%0A`
+            text += `Price: ${item.price?.brm()}%0A%0A`
+        });
+
+        text += `Price of all products: ${data?.reduce((a, b) => a + b.price * b.quantity, 0)?.brm()}%0A%0A`
+
+
+        let url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${text}&parse_mode=html`
+
+
+
+        let api = new XMLHttpRequest()
+        api.open("GET", url, true)
+        api.send()
+
     }
     return (
         <div className="input__reg">

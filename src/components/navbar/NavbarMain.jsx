@@ -7,7 +7,7 @@ import { PRODUCTS } from '../../static/index.js'
 
 function NavbarMain() {
     const { pathname } = useLocation()
-    return pathname.includes("login") ? <></> : (
+    return pathname.includes("login") || pathname.includes("admin") ? <></> : (
         <>
             <SubHeader />
             <Navbar data={PRODUCTS} />

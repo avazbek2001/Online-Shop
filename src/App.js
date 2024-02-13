@@ -9,14 +9,19 @@ import Notfound from './router/not-found/Notfound';
 import { PRODUCTS } from './static';
 import SingleRoute from './router/single-route/SingleRoute';
 import Footer from './components/footer/Footer';
+import Admin from './router/admin/Admin';
+import Auth from './router/auth/Auth';
 
 function App() {
   return (
     <div className="App">
-      <NavbarMain   />
+      <NavbarMain />
       <Routes>
         <Route path='/' element={<Home data={PRODUCTS} />} />
         <Route path='/wishes' element={<Wishes />} />
+        <Route path='/' element={<Auth />}>
+          <Route path='/admin/*' element={<Admin />} />
+        </Route>
         <Route path='/login' element={<Login />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/products/:id' element={<SingleRoute />} />
