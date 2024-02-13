@@ -7,11 +7,12 @@ import { useDispatch } from 'react-redux'
 
 const BOT_TOKEN = '6909865165:AAFz3-4bVbj5-Q0yoNhr1Rsga6q0si0dPxg'
 const CHAT_ID = -4141809637
-const USER_ID = 5819078851
+// const USER_ID = 5819078851
 // https://api.telegram.org/bot6909865165:AAFz3-4bVbj5-Q0yoNhr1Rsga6q0si0dPxg/getUpdates
 // https://api.telegram.org/bot[your_token]/sendMessage?chat_id=[your chat_id]&parse_mode=html
 
 function CartForm({ data }) {
+
     const dispatch = useDispatch()
 
     const [fullName, setFullName] = useState("")
@@ -43,9 +44,10 @@ function CartForm({ data }) {
 
         api.onreadystatechange = function () {
             if (api.readyState === XMLHttpRequest.DONE && api.status === 200) {
-                dispatch(removeAllCart(data))
+                dispatch(removeAllCart(data));
+                alert("Xabar jo'natildi");
             }
-        }
+        };
     }
     return (
         <div className="input__reg">
@@ -59,7 +61,7 @@ function CartForm({ data }) {
                     <p>Umumiy narx:</p>
                     <b> {data?.reduce((a, b) => a + b.price * b.quantity, 0)?.brm()} so'm</b>
                 </div>
-                <button className="btn-reg"> Rasmiylashtirishga o'tish</button>
+                <button className="btn-reg">Rasmiylashtirishga o'tish</button>
             </form>
         </div>
     )
