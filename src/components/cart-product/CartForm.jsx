@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react'
 // controlled and uncontrolled form (component)
 // controlled form equal usestate
 // uncontrolled form equal useref
+import { removeAllCart } from '../../context/cartSlice'
+import { useDispatch } from 'react-redux'
 
 const BOT_TOKEN = '6909865165:AAFz3-4bVbj5-Q0yoNhr1Rsga6q0si0dPxg'
 const CHAT_ID = -4141809637
@@ -10,12 +12,12 @@ const USER_ID = 5819078851
 // https://api.telegram.org/bot[your_token]/sendMessage?chat_id=[your chat_id]&parse_mode=html
 
 function CartForm({ data }) {
+    const dispatch = useDispatch()
+
     const [fullName, setFullName] = useState("")
     const tel = useRef()
     const message = useRef()
     const address = useRef()
-
-
 
     const HandleSubmit = (e) => {
         e.preventDefault()
@@ -33,15 +35,17 @@ function CartForm({ data }) {
 
         text += `Price of all products: ${data?.reduce((a, b) => a + b.price * b.quantity, 0)?.brm()}%0A%0A`
 
-
         let url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${text}&parse_mode=html`
-
-
 
         let api = new XMLHttpRequest()
         api.open("GET", url, true)
         api.send()
 
+        api.onreadystatechange = function () {
+            if (api.readyState === XMLHttpRequest.DONE && api.status === 200) {
+                dispatch(removeAllCart(data))
+            }
+        }
     }
     return (
         <div className="input__reg">
